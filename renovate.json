@@ -1,0 +1,58 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "packageRules": [
+    {
+      "updateTypes": [
+        "minor",
+        "patch"
+      ],
+      "automerge": true
+    },
+    {
+      "matchPackagePatterns": [
+        "react",
+        "react-dom"
+      ],
+      "groupName": "react"
+    },
+    {
+      "matchPackagePatterns": [
+        "@testing-library"
+      ],
+      "groupName": "testing-library"
+    },
+    {
+      "matchPackagePatterns": [
+        "^@types/"
+      ],
+      "groupName": "types"
+    },
+    {
+      "matchPackagePatterns": [
+        "husky",
+        "lint-staged",
+        "prettier"
+      ],
+      "groupName": "tools"
+    },
+    {
+      "matchPackagePatterns": [
+        "axios",
+        "classnames",
+        "http-proxy-middleware",
+        "invariant",
+        "path-to-regexp",
+        "query-string"
+      ],
+      "groupName": "misc"
+    }
+  ],
+  "timezone": "Europe/Berlin",
+  "schedule": [
+    "after 10pm every weekday",
+    "before 5am every weekday",
+    "every weekend"
+  ]
+}
