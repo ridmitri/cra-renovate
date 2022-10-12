@@ -2,8 +2,8 @@
   "extends": ["config:base"],
   "packageRules": [
     {
-      "updateTypes": ["minor", "patch"],
-      "automerge": true
+      "automerge": true,
+      "labels": ["patch"]
     },
     {
       "matchPackagePatterns": [
