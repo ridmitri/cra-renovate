@@ -1,56 +1,29 @@
 {
-  "extends": [
-    "config:base"
-  ],
+  "extends": ["config:base"],
   "packageRules": [
     {
-      "updateTypes": [
-        "minor",
-        "patch"
-      ],
+      "updateTypes": ["minor", "patch"],
       "automerge": true
     },
     {
       "matchPackagePatterns": [
         "react",
-        "react-dom"
+        "react-dom",
+        "@types/react-dom",
+        "@types/react"
       ],
-      "groupName": "react"
+      "groupName": "main"
     },
     {
-      "matchPackagePatterns": [
-        "@testing-library"
+      "matchPackagePatterns": ["*"],
+      "excludePackagePatterns": [
+        "react",
+        "react-dom",
+        "@types/react-dom",
+        "@types/react"
       ],
-      "groupName": "testing-library"
-    },
-    {
-      "matchPackagePatterns": [
-        "^@types/"
-      ],
-      "groupName": "types"
-    },
-    {
-      "matchPackagePatterns": [
-        "husky",
-        "lint-staged",
-        "prettier"
-      ],
-      "groupName": "tools"
-    },
-    {
-      "matchPackagePatterns": [
-        "axios",
-        "classnames",
-        "http-proxy-middleware",
-        "invariant",
-        "path-to-regexp",
-        "query-string"
-      ],
-      "groupName": "misc"
+      "groupName": "common"
     }
   ],
-  "timezone": "Europe/Berlin",
-  "schedule": [
-    "every weekday"
-  ]
+  "timezone": "Europe/Berlin"
 }
