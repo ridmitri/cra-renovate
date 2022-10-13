@@ -33,7 +33,7 @@
       "separateMajorMinor": false,
       "automerge": true,
       "labels": ["patch"],
-      "schedule": ["before 11am"]
+      "schedule": ["before 11pm"]
     }
   ],
   "timezone": "Europe/Berlin"
