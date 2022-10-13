@@ -2,27 +2,37 @@
   "extends": ["config:base"],
   "packageRules": [
     {
-      "automerge": true,
-      "labels": ["patch"]
-    },
-    {
+      "groupName": "main",
       "matchPackagePatterns": [
+        "typescript",
+        "cypress",
+        "react-scripts",
         "react",
         "react-dom",
         "@types/react-dom",
         "@types/react"
       ],
-      "groupName": "main"
+      "matchUpdateTypes": ["major", "minor", "patch"],
+      "labels": ["patch"],
+      "automerge": true,
+      "schedule": ["after 10am"]
     },
     {
+      "groupName": "common",
       "matchPackagePatterns": ["*"],
+      "matchUpdateTypes": ["major", "minor", "patch"],
       "excludePackagePatterns": [
+        "typescript",
+        "cypress",
+        "react-scripts",
         "react",
         "react-dom",
         "@types/react-dom",
         "@types/react"
       ],
-      "groupName": "common"
+      "automerge": true,
+      "labels": ["patch"],
+      "schedule": ["before 11am"]
     }
   ],
   "timezone": "Europe/Berlin"
