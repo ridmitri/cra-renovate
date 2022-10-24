@@ -15,7 +15,8 @@
       "matchUpdateTypes": ["major", "minor", "patch"],
       "labels": ["patch", "dependencies"],
       "automerge": true,
-      "schedule": ["after 14am every weekday"]
+      "schedule": ["every weekday"],
+      "timezone": "Europe/Berlin"
     },
     {
       "groupName": "common",
@@ -33,8 +34,8 @@
       "separateMajorMinor": false,
       "automerge": true,
       "labels": ["patch", "dependencies"],
-      "schedule": ["before 13pm every weekday"]
+      "schedule": ["every weekday"],
+      "timezone": "Europe/Berlin"
     }
-  ],
-  "timezone": "Europe/Berlin"
+  ]
 }
