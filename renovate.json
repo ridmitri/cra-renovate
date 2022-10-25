@@ -14,9 +14,7 @@
       ],
       "matchUpdateTypes": ["major", "minor", "patch"],
       "labels": ["patch", "dependencies"],
-      "automerge": true,
-      "schedule": ["every weekday"],
-      "timezone": "Europe/Berlin"
+      "automerge": true
     },
     {
       "groupName": "common",
@@ -33,9 +31,9 @@
       ],
       "separateMajorMinor": false,
       "automerge": true,
-      "labels": ["patch", "dependencies"],
-      "schedule": ["every weekday"],
-      "timezone": "Europe/Berlin"
+      "labels": ["patch", "dependencies"]
     }
-  ]
+  ],
+  "schedule": ["every weekday"],
+  "timezone": "Europe/Berlin"
 }
