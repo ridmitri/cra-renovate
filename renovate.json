@@ -33,7 +33,5 @@
       "automerge": true,
       "labels": ["patch", "dependencies"]
     }
-  ],
-  "schedule": ["every weekday"],
-  "timezone": "Europe/Berlin"
+  ]
 }
