@@ -13,8 +13,9 @@
         "@types/react"
       ],
       "matchUpdateTypes": ["major", "minor", "patch"],
-      "labels": ["patch", "dependencies"],
-      "automerge": true
+      "labels": ["patch"],
+      "automerge": true,
+      "schedule": ["after 10am"]
     },
     {
       "groupName": "common",
@@ -29,9 +30,10 @@
         "@types/react-dom",
         "@types/react"
       ],
-      "separateMajorMinor": false,
       "automerge": true,
-      "labels": ["patch", "dependencies"]
+      "labels": ["patch"],
+      "schedule": ["before 11am"]
     }
-  ]
+  ],
+  "timezone": "Europe/Berlin"
 }
