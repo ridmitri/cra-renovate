@@ -15,7 +15,7 @@
       "matchUpdateTypes": ["major", "minor", "patch"],
       "labels": ["patch"],
       "automerge": true,
-      "schedule": ["after 10am"]
+      "schedule": ["on the first day of the month"]
     },
     {
       "groupName": "common",
@@ -32,7 +32,7 @@
       ],
       "automerge": true,
       "labels": ["patch"],
-      "schedule": ["before 11am"]
+      "schedule": ["every weekend"]
     }
   ],
   "timezone": "Europe/Berlin"
