@@ -12,7 +12,7 @@
     "@types/react": "18.0.24",
     "@types/react-dom": "18.0.8",
     "@types/lodash": "4.14.189",
-    "axios": "1.6.0",
+    "axios": "1.7.4",
     "classnames": "2.3.2",
     "http-proxy-middleware": "2.0.6",
     "invariant": "2.2.4",
